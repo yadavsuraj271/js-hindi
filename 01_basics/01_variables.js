@@ -13,7 +13,7 @@ accountCity = "nihalwas"
 //  ek programmer aaya usne account pswd ki value set krdi phir dusra aaya usne koi or krdi  usne condition likhi for ki usme  account pswd use krlia to glti ye hoti thi account pswd main declared change hojata tha //
 //  ab kisi ne name variable 10 jgh use kia to 10 jgh change hojata tha //
 
-//  modern js me  const or let hi use krte hai var old skool ho chuka   because of  block scope or functional scope//
+//  modern js me  const orr let hi use krte hai var old skool ho chuka   because of  block scope or functional scope//
 
 // accountID = 2
 console.log(accountEmail);
