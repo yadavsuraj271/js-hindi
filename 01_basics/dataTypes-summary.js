@@ -109,18 +109,48 @@ let anotherName = myName
 
 anotherName = "Rahul"
 
+console.log(myName);
+console.log(anotherName);
+
 // myName change nahi hoga
 
 
 // Reference → Heap memory → Address share hota hai
 
 let userOne = {
-    email: "suraj@gmail.com"
+    email: "suraj@gmail.com",
+    upi: "suraj@ybl"
 }
 
 let userTwo = userOne
+userTwo.email = "yadavji@gmail.com"
+userTwo.upi = "yadavji@ybl"
 
-userTwo.email = "rahul@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+console.log(userOne.upi);
+console.log(userTwo.upi);
+// outputs=>// yadavji@gmail.com , // yadavji@gmail.com
+// outputs of one two upi =>
+    // yadavji@ybl , yadavji@ybl
+
+
 
 // Dono me change reflect hoga 
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// stack (primitive), heap(reference) memory concept
+
+// primitive data types → number, string, boolean, null, undefined, symbol, bigint
+// reference data types → object, array, function
+
+// primitive data types stack memory me store hote hai, direct value store hoti hai, access fast hota hai
+// reference data types heap memory me store hote hai, reference store hota hai stack me, access slow hota hai
+
+// primitive data types me value copy hoti hai, reference data types me reference copy hota hai
+
+// primitive data types me change ek variable ko affect nahi karta, reference data types me change ek variable ko affect karta hai
+
+// primitive data types me comparison value ke basis par hota hai, reference data types me comparison reference ke basis par hota hai
